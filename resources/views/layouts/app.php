@@ -34,7 +34,28 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; <?= date('Y') ?> Kalakaar — built with PHP, MySQL &amp; Shell.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="/">🎭 Kalakaar</a>
+                    <p class="footer-tag">Where talent meets opportunity. Build a profile, get discovered, and get hired — across every creative field.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <a href="/artists">Browse Artists</a>
+                    <a href="/search">Search Talent</a>
+                    <a href="/about">About</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <a href="/register">Join Kalakaar</a>
+                    <a href="/login">Log in</a>
+                    <a href="/dashboard">Dashboard</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <?= date('Y') ?> Kalakaar. All rights reserved.</p>
+                <p class="footer-made">Crafted for creators, everywhere.</p>
+            </div>
         </div>
     </footer>
 </body>

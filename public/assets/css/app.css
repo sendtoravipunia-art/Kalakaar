@@ -140,7 +140,19 @@ body {
 .artist-card .rate { margin-top: 12px; font-weight: 600; }
 
 /* Footer */
-.site-footer { border-top: 1px solid var(--border); padding: 26px 0; color: var(--muted); }
+.site-footer { border-top: 1px solid var(--border); padding: 50px 0 28px; color: var(--muted); background: var(--surface); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; }
+.footer-brand .brand { font-size: 1.2rem; }
+.footer-tag { margin-top: 12px; max-width: 340px; font-size: .95rem; line-height: 1.6; }
+.footer-col h4 { color: var(--text); font-size: .95rem; margin-bottom: 14px; }
+.footer-col a { display: block; color: var(--muted); text-decoration: none; margin-bottom: 10px; font-size: .92rem; }
+.footer-col a:hover { color: var(--text); }
+.footer-bottom {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+    margin-top: 38px; padding-top: 22px; border-top: 1px solid var(--border); font-size: .88rem;
+}
+.footer-made { color: var(--muted); }
+@media (max-width: 640px) { .footer-grid { grid-template-columns: 1fr; gap: 24px; } }
 
 /* =========================================================================
    Landing page
