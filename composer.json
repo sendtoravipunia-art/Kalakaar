@@ -1,0 +1,25 @@
+{
+    "name": "ravi/kalakaar",
+    "description": "Kalakaar — a marketplace where artists of any field build a profile and producers search and hire them.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "app/Core/helpers.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public"
+    }
+}
