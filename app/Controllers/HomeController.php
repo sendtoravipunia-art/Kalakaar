@@ -53,10 +53,10 @@ final class HomeController extends Controller
     private function fields(): array
     {
         try {
-            return Database::select('SELECT name, icon FROM categories ORDER BY name');
+            return Database::select('SELECT name FROM categories ORDER BY name');
         } catch (Throwable) {
             return array_map(
-                static fn (string $n) => ['name' => $n, 'icon' => '🎭'],
+                static fn (string $n) => ['name' => $n],
                 ['Music', 'Dance', 'Acting', 'Photography', 'Painting', 'Writing', 'Film', 'Design'],
             );
         }
@@ -71,22 +71,22 @@ final class HomeController extends Controller
     private function features(): array
     {
         return [
-            ['icon' => '🎨', 'title' => 'Rich artist profiles',
-             'desc' => 'Artists present themselves with a headline, field, bio, city, hourly rate, years of experience and live availability — everything a producer needs to judge fit at a glance.'],
-            ['icon' => '🔍', 'title' => 'Smart search & discovery',
-             'desc' => 'Producers filter talent by field, keyword and city to build a shortlist in seconds, instead of scrolling endless feeds.'],
-            ['icon' => '🤝', 'title' => 'Structured hiring',
-             'desc' => 'Send a hire request with a clear project title, brief and budget. The artist is notified instantly and can accept, decline or discuss.'],
-            ['icon' => '🎬', 'title' => 'Portfolio showcase',
-             'desc' => 'Each artist attaches real work — audio, video, images or links — so producers evaluate proven output, not just claims.'],
-            ['icon' => '⭐', 'title' => 'Ratings & reviews',
-             'desc' => 'After a project, producers leave a star rating and written feedback, building a transparent reputation that rewards great work.'],
-            ['icon' => '💬', 'title' => 'Built-in messaging',
-             'desc' => 'Producers and artists coordinate in a single conversation thread — briefs, timelines and details stay in one place.'],
-            ['icon' => '📊', 'title' => 'Role-based dashboards',
-             'desc' => 'Artists and producers each get a focused dashboard tailored to what they actually do — manage a profile, or manage hires.'],
-            ['icon' => '🔔', 'title' => 'Instant notifications',
-             'desc' => 'Hire requests, new reviews and messages surface immediately, so opportunities are never missed.'],
+            ['icon' => 'user', 'title' => 'Artist profiles',
+             'desc' => 'Artists list a headline, field, bio, city, hourly rate, years of experience and current availability, so producers can judge fit quickly.'],
+            ['icon' => 'search', 'title' => 'Search and discovery',
+             'desc' => 'Producers filter talent by field, keyword and city to build a shortlist, instead of scrolling through long feeds.'],
+            ['icon' => 'briefcase', 'title' => 'Hiring requests',
+             'desc' => 'Send a hire request with a project title, brief and budget. The artist is notified and can accept, decline or reply.'],
+            ['icon' => 'image', 'title' => 'Portfolios',
+             'desc' => 'Artists attach work samples (audio, video, images or links) so producers can review real output before hiring.'],
+            ['icon' => 'star', 'title' => 'Ratings and reviews',
+             'desc' => 'After a project, producers leave a star rating and feedback, which builds an artist\'s reputation over time.'],
+            ['icon' => 'message', 'title' => 'Messaging',
+             'desc' => 'Producers and artists talk in a single thread, so briefs, timelines and details stay in one place.'],
+            ['icon' => 'grid', 'title' => 'Role-based dashboards',
+             'desc' => 'Artists and producers each get their own dashboard for managing a profile or managing hires.'],
+            ['icon' => 'bell', 'title' => 'Notifications',
+             'desc' => 'Hire requests, new reviews and messages show up as notifications so nothing gets missed.'],
         ];
     }
 }

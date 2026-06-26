@@ -20,7 +20,7 @@
             <p class="muted">City: <?= e((string) ($artist['city'] ?? '—')) ?></p>
             <p class="muted">Experience: <?= e((string) ($artist['experience_years'] ?? '—')) ?> years</p>
             <p class="muted">Rate: ₹<?= e((string) ($artist['hourly_rate'] ?? '—')) ?>/hr</p>
-            <p class="muted">Available: <?= !empty($artist['available']) ? 'Yes ✅' : 'No' ?></p>
+            <p class="muted">Available: <?= !empty($artist['available']) ? 'Yes' : 'No' ?></p>
         </div>
     </div>
 

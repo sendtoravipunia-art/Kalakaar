@@ -212,7 +212,7 @@ body {
 .lp-section-alt .lp-feature { background: var(--surface-2); }
 .lp-feature:hover { transform: translateY(-4px); border-color: var(--accent-2); }
 .lp-feature-icon {
-    width: 52px; height: 52px; display: grid; place-items: center; font-size: 1.5rem;
+    width: 52px; height: 52px; display: grid; place-items: center; color: var(--accent);
     background: linear-gradient(135deg, rgba(255, 92, 138, .18), rgba(108, 92, 231, .18));
     border: 1px solid var(--border); border-radius: 14px; margin-bottom: 16px;
 }

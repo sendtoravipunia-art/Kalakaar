@@ -10,7 +10,7 @@
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="/">🎭 Kalakaar</a>
+            <a class="brand" href="/">Kalakaar</a>
             <nav class="nav">
                 <a href="/artists">Browse Artists</a>
                 <a href="/search">Search</a>
@@ -36,8 +36,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a class="brand" href="/">🎭 Kalakaar</a>
-                    <p class="footer-tag">Where talent meets opportunity. Build a profile, get discovered, and get hired — across every creative field.</p>
+                    <a class="brand" href="/">Kalakaar</a>
+                    <p class="footer-tag">A marketplace for artists and producers across every creative field.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Explore</h4>
@@ -54,7 +54,6 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; <?= date('Y') ?> Kalakaar. All rights reserved.</p>
-                <p class="footer-made">Crafted for creators, everywhere.</p>
             </div>
         </div>
     </footer>

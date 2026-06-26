@@ -2,7 +2,7 @@
 <section class="container" style="padding:40px 0">
     <?= partial('partials.alerts') ?>
 
-    <h1>Welcome, <?= e($user['name'] ?? 'there') ?> 👋</h1>
+    <h1>Welcome, <?= e($user['name'] ?? 'there') ?></h1>
     <p class="muted" style="margin-bottom:24px">
         You are signed in as a <strong><?= e($user['role'] ?? '') ?></strong>.
     </p>

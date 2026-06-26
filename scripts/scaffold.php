@@ -26,7 +26,7 @@ $entities = [
         'fields' => [
             ['name' => 'name', 'sql' => 'VARCHAR(80)', 'null' => false, 'rules' => 'required|max:80', 'input' => 'text', 'sample' => ['Music', 'Dance', 'Acting', 'Photography', 'Painting']],
             ['name' => 'slug', 'sql' => 'VARCHAR(100)', 'null' => false, 'rules' => 'required|max:100', 'input' => 'text', 'sample' => ['music', 'dance', 'acting', 'photography', 'painting']],
-            ['name' => 'icon', 'sql' => 'VARCHAR(16)', 'null' => true, 'rules' => 'max:16', 'input' => 'text', 'sample' => ['🎵', '💃', '🎭', '📷', '🎨']],
+            ['name' => 'icon', 'sql' => 'VARCHAR(16)', 'null' => true, 'rules' => 'max:16', 'input' => 'text', 'sample' => ['', '', '', '', '']],
         ],
     ],
     [

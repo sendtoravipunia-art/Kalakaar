@@ -6,7 +6,7 @@
 <!-- Hero -->
 <section class="lp-hero">
     <div class="container lp-hero-inner">
-        <span class="lp-badge">✦ The marketplace for creative talent</span>
+        <span class="lp-badge">A marketplace for creative talent</span>
         <h1 class="lp-title">Hire the right <span class="lp-grad">Kalakaar</span><br>for every project</h1>
         <p class="lp-sub">
             Kalakaar connects artists of every field — music, dance, acting, photography, writing and more —
@@ -36,7 +36,6 @@
         <div class="lp-chips">
             <?php foreach ($fields as $f): ?>
                 <a class="lp-chip" href="/search?field=<?= e(urlencode((string) $f['name'])) ?>">
-                    <span class="lp-chip-icon"><?= e((string) ($f['icon'] ?? '🎭')) ?></span>
                     <?= e((string) $f['name']) ?>
                 </a>
             <?php endforeach; ?>
@@ -48,13 +47,13 @@
 <section class="lp-section lp-section-alt">
     <div class="container">
         <div class="lp-section-head">
-            <h2 class="lp-h2">Everything you need to hire and get hired</h2>
-            <p class="lp-lead">A complete toolkit for artists and producers — thoughtfully built, end to end.</p>
+            <h2 class="lp-h2">What you can do on Kalakaar</h2>
+            <p class="lp-lead">The tools artists and producers use to find each other and work together.</p>
         </div>
         <div class="lp-features">
             <?php foreach ($features as $feature): ?>
                 <article class="lp-feature">
-                    <div class="lp-feature-icon"><?= e((string) $feature['icon']) ?></div>
+                    <div class="lp-feature-icon"><?= icon((string) $feature['icon']) ?></div>
                     <h3 class="lp-feature-title"><?= e((string) $feature['title']) ?></h3>
                     <p class="lp-feature-desc"><?= e((string) $feature['desc']) ?></p>
                 </article>

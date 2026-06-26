@@ -39,7 +39,7 @@
                 <span class="field-tag"><?= e((string) ($a['category_name'] ?? '')) ?></span>
                 <h3><?= e((string) $a['artist_name']) ?></h3>
                 <p class="bio"><?= e((string) ($a['headline'] ?? '')) ?></p>
-                <?php if (!empty($a['city'])): ?><p class="muted">📍 <?= e((string) $a['city']) ?></p><?php endif; ?>
+                <?php if (!empty($a['city'])): ?><p class="muted"><?= e((string) $a['city']) ?></p><?php endif; ?>
                 <a class="btn btn-ghost btn-sm" href="/artists/<?= e((string) $a['id']) ?>">View profile</a>
             </div>
         <?php endforeach; ?>

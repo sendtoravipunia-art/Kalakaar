@@ -1,10 +1,10 @@
-# Kalakaar 🎭
+# Kalakaar
 
-A marketplace where **artists of any field** (music, dance, acting, photography, writing…)
-build a profile, and **producers search and hire** them.
+A marketplace where artists of any field (music, dance, acting, photography, writing
+and so on) build a profile, and producers search for and hire them.
 
-Built with **PHP + MySQL + Shell** — no framework, no front-end build step, no JavaScript
-tooling. Just clone, configure a database, and run.
+It runs on PHP and MySQL with a few Bash scripts for setup. No framework and no
+front-end build step, so it is quick to get running locally.
 
 ---
 
@@ -92,7 +92,7 @@ bash scripts/fresh.sh
 bash scripts/serve.sh
 ```
 
-Now open **<http://localhost:8000>** 🎉
+Now open <http://localhost:8000> in your browser.
 
 > Prefer to do the database steps individually? Run, in order:
 > `bash scripts/setup-db.sh` → `bash scripts/migrate.sh` → `bash scripts/seed.sh`.
@@ -235,8 +235,4 @@ The generator only writes files that don't exist yet, so it is safe to re-run.
 | `mysql: command not found` (in scripts) | Add the MySQL `bin` folder to `PATH`. |
 | Browse/Search page is empty | Run `bash scripts/seed.sh` to load demo data. |
 | `Address already in use` on :8000 | Use another port: `bash scripts/serve.sh localhost 8080`. |
-| Class “…” not found after adding files | Run `composer dump-autoload`. |
-
----
-
-Made with PHP, MySQL & Shell. 🎭
+| Class "…" not found after adding files | Run `composer dump-autoload`. |

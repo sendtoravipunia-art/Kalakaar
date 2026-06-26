@@ -13,7 +13,7 @@
                     <h3><?= e((string) $a['artist_name']) ?></h3>
                     <p class="bio"><?= e((string) ($a['headline'] ?? '')) ?></p>
                     <?php if (!empty($a['city'])): ?>
-                        <p class="muted">📍 <?= e((string) $a['city']) ?></p>
+                        <p class="muted"><?= e((string) $a['city']) ?></p>
                     <?php endif; ?>
                     <?php if (!empty($a['hourly_rate'])): ?>
                         <p class="rate">₹<?= e((string) $a['hourly_rate']) ?>/hr</p>
