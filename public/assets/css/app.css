@@ -35,7 +35,9 @@ body {
     z-index: 10;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
-.brand { font-size: 1.35rem; font-weight: 700; color: var(--text); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 1.35rem; font-weight: 700; color: var(--text); text-decoration: none; }
+.brand-logo { display: block; width: 30px; height: 30px; }
+.footer-brand .brand-logo { width: 28px; height: 28px; }
 .nav { display: flex; align-items: center; gap: 20px; }
 .nav a { color: var(--muted); text-decoration: none; font-weight: 500; }
 .nav a:hover { color: var(--text); }
